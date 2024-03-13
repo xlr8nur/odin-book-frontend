@@ -1,0 +1,116 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    padding: 0.75em;
+    box-shadow: 0px 0px 3px 3px #ebebeb;
+
+    @media screen and (max-width: 500px) {
+        &{
+            padding: 0.5em;
+        } 
+    }
+
+    a{
+        text-decoration: none;
+
+        h1{
+            color: #1877f2;
+            font-size: 32px;
+
+            @media screen and (max-width: 500px) {
+                &{
+                    font-size: 21px;
+                } 
+            }
+        }
+    }
+
+    .nav-control{
+        display: flex;
+        align-items: center;
+
+        .profile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 8px 4px 4px;
+            background: white;
+            border-radius: 200px;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+            margin-right: 8px;
+            font-size: 18px;
+            color: black;
+
+            @media screen and (max-width: 500px) {
+                &{
+                    font-size: 12px;
+                } 
+            }
+
+            &:hover{
+                background: #ececec;
+            }
+
+            .nav-image{
+                display: block;
+                width: 36px;
+                height: 36px;
+                border-radius: 24px;
+                margin-right: 8px;
+
+                @media screen and (max-width: 500px) {
+                    &{
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 12px;
+                        margin-right: 6px;
+                    } 
+                }
+            }
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5em 1em;
+            background: #1877f2;
+            border: none;
+            border-radius: 200px;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+
+            &:hover{
+                filter: brightness(0.9);
+            }
+
+            svg{
+                width: 24px;
+                height: 24px;
+
+                @media screen and (max-width: 500px) {
+                    &{
+                        width: 18px;
+                        height: 18px;
+                    } 
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                &{
+                    font-size: 16px;
+                } 
+            }
+        }
+    }
+    
+}

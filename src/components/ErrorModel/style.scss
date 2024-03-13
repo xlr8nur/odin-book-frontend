@@ -1,0 +1,38 @@
+#model-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background: rgba(88, 88, 88, 0.3);
+
+    #error-model{
+        display: grid;
+        grid-template-rows: max-content 1fr max-content;
+        padding: 1em 2em;
+        min-width: min-content;
+        width: 70%;
+        height: 500px;
+        background: white;
+        border-radius: 16px;
+
+        .model-head{
+            border-bottom: 1px solid grey;
+            margin-bottom: 16px;
+        }
+
+        .model-body{
+            overflow-y: scroll;
+        }
+
+        .model-foot{
+            margin-top: 16px;
+            border-top: 1px solid grey;
+            padding: 1em 0;
+        }
+    }
+}
